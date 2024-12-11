@@ -1,0 +1,179 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Pirata_One';
+	src: url(../fonts/Pirata_One/PirataOne-Regular.ttf);
+}
+
+.body {
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	width: 99vw; /* makes sure that the "container" div is stretched to the left and right edges of our web browser */
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+section {
+	position: relative; /* This is needed so that all of our CSS positionings will work within all of our sections */
+}
+
+/* Typography */
+
+/* For Headers/Titles */
+h1 {
+	font-size: 4em;
+	color: #EBAF1E;
+	font-family: 'Roboto';	
+}
+
+/* For Subheaders */
+h2 {
+	font-size: 2em;
+	color:#353083;
+}
+
+.Announcements {
+	color:#EBAF1E
+}
+
+h3 {
+	font-size: 30px;
+}
+
+/* For Captions */
+h4 {
+	font-size: 1em;
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 40px;
+}
+
+/* Navigation Bar */
+.logo{
+	color:#EBAF1E;
+}
+
+.navigation {
+	width: 100vw;
+	height: 40px;
+	background: #353083;
+	position:static; /* Here, we use fixed positioning so that our nav bar always stays on top of the page */
+	z-index: 99; /* having a z-index larger than 0 ensures that our nav bar is on top of other content on the page */
+	padding: 20px;
+	width: 98vw;
+}
+
+ul {
+	list-style: none; /* this removes bullet points on our "list" */
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 1.3em;
+}
+
+li {
+	float: right; /* makes all of our links on the right side of the nav bar */
+	margin-left: 20px; /* gives 20px of spacing between each text link */
+}
+
+a {
+	color: white;
+	text-decoration: none; /* removes the underline and blue color of our text links */
+}
+
+a:hover {
+	color: #EBAF1E;
+}
+
+li:last-child { /* last-child only targets the last item on our list, which is our home page link */
+	float: left; /* make sure that the home page link is on the left of the page, not the right */
+	margin-left: 0px;
+}
+
+/* Buttons */
+.action-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.action-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 40px;
+	background-color: #EBAF1E;
+	color: #353083;
+	font-size: 14pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;	
+	border-left: 30px solid #EBAF1E;
+}
+
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent; 	
+	border-right: 30px solid #EBAF1E; 
+  }
+
+
+  /* Footer */
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	width: 100vw;
+	height: auto;
+	background: #6C1F5F;
+	padding-top: 30px;
+}
+
+.footer_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 1000px;
+}
+
+.footer_logo {
+	color: #EBAF1E;
+	font-size: 22px;
+}
+
+.footer_copyright {
+	border-top: 1px solid white;
+	padding: 30px;
+	width: 1000px;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+}
+
+/* .footer_logo_social-media {
+	display: flex;
+	flex-direction: row;
+	width: 2px;
+	height: 2px;
+	color:#EBAF1E;
+	border-radius: 100%;
+} */

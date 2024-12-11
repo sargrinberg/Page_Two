@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Entertainment</title>
+  </head>
+
+  <body>
+    <!-- It is almost always a good idea to have a large div wrap out the entire contents of your html body. In this example, that div is "container" This will make placement of other HTML elements easier. -->
+
+    <div class="container">
+      <!-- Navigation Bar  -->
+
+      <!-- In order to build our nav bar, use lists. <ul> is basically the container of the list and <li> is a single element in the list.
+
+			  To insert a link in the nav bar, simply put an anchor tag <a> inside a <li>. 
+
+			  For the link's href, we use id's which is another CSS selector (ID uses "#" as opposed to a class's ".". This makes sure that clicking on a link will automatically sroll down to a specific section.
+
+			  Finally, notice how our HTML is divided used <section> instead of <div>.-->
+      <section class="navigation">
+        <ul>
+          <!-- <li><a href="#four">Link 4</a></li>
+					<li><a href="#three">Link 3</a></li> -->
+          <li><a href="#two">Programs & Daily Events</a></li>
+          <li><a href="#one">Entertainment</a></li>
+          <li>
+            <a href="#home" class="logo">Minnesota Renaissance Festival</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Hero Image  -->
+      <section class="home" id="home">
+        <div class="home_content">
+          <h1>
+            Welcome to 2024 <br />
+            Renaissance Festival
+          </h1>
+                   
+          <div class="action-button-container">
+            <div class="arrow-left"></div>
+            <div class="action-button">Buy Tickets</div>
+            <div class="arrow-right"></div>
+          </div>
+
+        </div>
+        <h4>Scroll Down</h4>
+      </section>
+
+      <!-- First Section  -->
+      <section class="one" id="one">
+        <div class="sword_logo">
+          <img src="images/Swords.png" alt="sword_logo" />
+          <div class="sword_logo_banner">
+            <div class="sword_logo_text">
+              <h2>Your Adventure Begins!</h2>
+            </div>
+            <div class="flag-right">
+              <img src="images/svg/right_flag.svg" alt="" />
+            </div>
+            <div class="flag-left">
+              <img src="images/svg/left_flag.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="one_content">
+          <p class="one_content_first">
+            Open weekends (Sat. & Sun.) Aug.17th - Sep.29th, 2024 <br />
+            Plus Labor Day, September 2nd & Festival Friday, September 27th,
+            2024 <br />
+            9 AM - 7PM &#149; Rain or Shine
+          </p>
+
+          <p>
+            952-445-7361 <br />
+            Parking passes are REQUIRED to park on the Minnesota Renaissance
+            Festival grounds
+          </p>
+        </div>
+      </section>
+
+      <!-- Second Section  -->
+      <section class="two" id="two">
+        <div class="two_container">
+          <h2 class="two_announcement-text">Announcements</h2>
+
+          <div class="two_announcement">
+            <img src="images/magician.png" />
+            <div class="two_announcement_content">
+              <h3>Throwback Thursdays</h3>
+              <p>
+                Let's take a trip down memory lane with Throwback <br />
+                Thursdays! Pictured in 1979, we have Magical Mystical <br />
+                Michael at the Minnesota Renaissance Festival! Huzzah!
+              </p>
+            </div>
+          </div>
+
+          <div class="two_announcement">
+            <div class="two_announcement_content">
+              <h3>Our 53rd Anniversary</h3>
+              <p>
+                The announcement of the year of the <br />
+                year is here! The Minnesota Renaissance <br />
+                Festival is beyond thrilled to announce <br />
+                our 53rd Anniversary Theme Weekends!
+              </p>
+            </div>
+            <img src="images/mermaid.png" />
+          </div>
+
+          <div class="two_announcement">
+            <img src="images/drink.png" />
+            <div class="two_announcement_content">
+              <h3>Visit J.Bird Wines</h3>
+              <p>
+                The festival has ended, but the fun continues,<br />
+                keep the spirit alive by visiting our fantastic mead <br />
+                partner, J.Bird Wines at their Meadery in Cambridge, MN! <br />
+                Cheers to good times and great mead!
+              </p>
+            </div>
+          </div>
+
+          <div class="action-button-container">
+            <div class="arrow-left"></div>
+            <div class="action-button">Load More...</div>
+            <div class="arrow-right"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Third Section  -->
+      <section class="three" id="three">
+        <div class="three_container">
+          <div class="three_content">
+            <h2 class="three-heading">7 Weekends of Huzzah and Cheers!</h2>
+            <p class="description">
+              Join King Henry and his royal court for an unforgettable journey
+              back in time to his 16th-century European village, where adventure
+              and excitement await at every corner. Explore 16 stages of
+              captivating live entertainment, from daring jousts to theatrical
+              performances, offering something for every member of the family.
+              Wander through the vibrant Festival marketplace, where over 250
+              talented artisans showcase their handcrafted treasures, creating a
+              truly unique shopping experience. Meet and interact with a host of
+              colorful characters roaming the village streets, adding to the
+              lively atmosphere. Celebrate 54 years of tradition and merriment
+              at the Minnesota Renaissance Festival in Shakopee, MN. Huzzah!
+            </p>
+          </div>
+
+          <img src="images/Ribbons.png" />
+        </div>
+      </section>
+
+      <!-- Fourth Section  -->
+      <section class="four" id="four"></section>
+
+      <!-- Fifth Section  -->
+      <section class="footer" id="five">
+        <div class="footer_container">
+          <div class="footer_logo">
+            Minnesota Renaissance Festival
+            <div class="footer_logo_social-media">
+              <!-- ...social media icons go here -->
+            </div>
+          </div>
+          <div class="footer_menu">
+            <ul>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Programs & Daily Events</a> </li>             
+            </ul>
+          </div>          
+        </div>
+        <div class="footer_copyright">
+          <p>Copyright 2024. Mid America Festivals. All right reserved. </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
